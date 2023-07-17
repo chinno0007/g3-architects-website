@@ -72,6 +72,7 @@ nav li a{
 main{
     max-width: 1440px;
     margin: 60px auto;
+    margin-bottom: 0px;
 }
 /* teams style */
 .teams-container{
@@ -183,10 +184,12 @@ footer{
     border-radius: 8px;
     background-color: #FFF4E7;
     margin-top: 130px;
+    margin-bottom: 0px;
 }
 footer p{
     text-align: center;
-    padding: 38px 400px;
+    padding: 58px ;
+    margin-bottom: 0px;
 }
 
 
@@ -229,13 +232,52 @@ footer p{
     }
     nav,
     .teams-container,
-    .features,
-    .sponsors-img-container{
+    .sponsors-img-container,
+    .features{
         flex-direction: column;
     }
     .feature-img img{
         width: 90%;
         
     }
+   
+    .facts-card-container{
+        gap: 1rem;
+    }
+}
+@media screen and (min-width:961px){
+    header{
+        padding: 20px;
+    }
+    
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-content{
+        text-align: center;
+    }
+
+    .teams-img-container img{
+        grid-template-columns:2fr ;
+    }
+    .features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature-img img{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        
+        
+    }
+    main footer{
+        padding: 0px;
+        
+    }
+    
+    
+    
 }
 
